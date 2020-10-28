@@ -19,6 +19,7 @@ public class MyTestMap {
 		System.out.println("The Map contents are:" + m);
 		
 		for(Object o : m.keySet()) {
+			// Modified from int to Integer.
 			Integer myKey = (Integer)o;
 			System.out.println("Key is: " + myKey + "and value is:" + m.get(myKey) );
 		}
