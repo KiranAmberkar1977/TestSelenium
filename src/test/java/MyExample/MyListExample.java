@@ -16,7 +16,7 @@ import java.util.TreeMap;
 public class MyListExample {
 
 	public static void main(String[] args) throws ClassNotFoundException {
-		ArrayList<String> myAL = new ArrayList<String>();
+		List<String> myAL = new ArrayList<String>();
 		
 		myAL.add(0, "First element");
 		myAL.add(1, "Second element");
@@ -31,7 +31,7 @@ public class MyListExample {
 		System.out.println("ArrayList object is: " + myAL);
 		print(myAL);
 		
-		LinkedList<String> myLL = new LinkedList<String>();
+		List<String> myLL = new LinkedList<String>();
 				
 		myLL.add(0, "First element");
 		myLL.add(1, "Second element");
@@ -47,8 +47,8 @@ public class MyListExample {
 		
 		Class classlldr = Class.forName("MyExample.MyListExample");  //lang class loader is passed as parameter  
 		System.out.println("Name of Class  = " + classlldr.getName());  //get the name of class  
-		System.out.println("Package Name  = " + classlldr.getPackage());//get the name of class  
-		System.out.println("Interface Name  = " + classlldr.getInterfaces());  //get the name of class  
+		System.out.println("Package Name  = " + classlldr.getPackage());//get the package of class  
+		System.out.println("Interface Name  = " + classlldr.getInterfaces());  //get the interface of class  
 		
 	}
 	

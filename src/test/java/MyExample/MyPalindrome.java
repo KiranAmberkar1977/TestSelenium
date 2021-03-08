@@ -9,10 +9,7 @@ public class MyPalindrome {
 		srcString = srcString.toLowerCase();
 		
 		String dstString = MyPalindrome.reversed_string(srcString);
-		if (dstString.contentEquals(srcString))
-			System.out.println("String is a palindrome...");
-		else
-			System.out.println("String is NOT a palindrome...");
+		string_extracted(srcString, dstString);
 		
 		// Using StringBuilder reverse function.
 		StringBuilder sb_srcString = new StringBuilder();
@@ -21,11 +18,22 @@ public class MyPalindrome {
 		StringBuilder sb_dstString = sb_srcString.reverse();
 		System.out.println("SB Dst String is:" + sb_dstString);
 		
+		extracted(sb_srcString, sb_dstString);
+		
+	}
+
+	private static void string_extracted(String srcString, String dstString) {
+		if (dstString.contentEquals(srcString))
+			System.out.println("String is a palindrome...");
+		else
+			System.out.println("String is NOT a palindrome...");
+	}
+
+	private static void extracted(StringBuilder sb_srcString, StringBuilder sb_dstString) {
 		if (sb_dstString.equals(sb_srcString))
 			System.out.println("SB String is a palindrome...");
 		else
 			System.out.println("SB String is NOT a palindrome...");
-		
 	}
 
 	public static String reversed_string(String srcString) {
